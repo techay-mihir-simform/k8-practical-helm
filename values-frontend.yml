@@ -1,0 +1,9 @@
+microservice: frontend
+deployment:
+  replicas: 1
+  image : mihir13/compose_react:latest
+  port:
+    containerPort: 80
+service:
+  type: NodePort
+  port: 80

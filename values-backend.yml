@@ -1,0 +1,11 @@
+microservice: backend
+deployment:
+  replicas: 1
+  image : mihir13/compose_node:latest
+  port:
+    containerPort: 8000
+service:
+  type: NodePort
+  port: 8000 
+  # if we want to give nodeport then use nodePort variable
+  nodePort: 30002

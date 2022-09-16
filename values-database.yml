@@ -1,0 +1,9 @@
+microservice: database
+deployment:
+  replicas: 1
+  image : postgres:latest
+  port:
+    containerPort: 5432
+service:
+  type: ClusterIP
+  port: 5432
